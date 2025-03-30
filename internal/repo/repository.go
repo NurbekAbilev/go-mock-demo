@@ -5,4 +5,6 @@ type User struct {
 	Name  string
 }
 
-type Repository interface{}
+type UserRepository interface {
+	CreateUser(user User) error
+}

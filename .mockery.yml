@@ -1,3 +1,9 @@
 with-expecter: true
+resolve-type-alias: false
+disable-version-string: true
+issue-845-fix: True
 packages:
-    github.com/github.com/nurbekabilev/go-mock-demo/internal:
+    github.com/nurbekabilev/go-mock-demo/internal/repo:
+      interfaces:
+        UserRepository:
+      

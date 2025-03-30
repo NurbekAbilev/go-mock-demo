@@ -2,8 +2,14 @@ with-expecter: true
 resolve-type-alias: false
 disable-version-string: true
 issue-845-fix: True
+# inpackage: True
+
 packages:
     github.com/nurbekabilev/go-mock-demo/internal/repo:
-      interfaces:
-        UserRepository:
+      config:
+        all: True
+        dir: "./mocks/{{.PackageName}}"
+
+      # interfaces:
+        # UserRepository:m
       

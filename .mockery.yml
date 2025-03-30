@@ -1,0 +1,3 @@
+with-expecter: true
+packages:
+    github.com/github.com/nurbekabilev/go-mock-demo/internal:
